@@ -13,11 +13,21 @@ const secondTooltip = (
   <Tooltip message='another tooltip message'>
     officiis
   </Tooltip>
-  
+
 function App() {
   return (
     <main className='App'>
-      {/* content goes here */}
+    const arrayOfImgs = apiResponse.items.map((item) =>
+  <li key={item.id}>
+    {item.name}
+  </li>
+)
+return (
+  <p>Select the animal you'd like to name</p>
+  <ul>
+    {arrayOfImgs}
+  </ul>
+)
     </main>
   );
 }
